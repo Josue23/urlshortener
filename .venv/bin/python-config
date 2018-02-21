@@ -1,4 +1,4 @@
-#!/home/josue/Documents/labs/trydjango110/.venv/bin/python
+#!/home/josue/Documentos/labs/urlshortener/.venv/bin/python
 
 import sys
 import getopt

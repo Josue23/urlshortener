@@ -1,4 +1,4 @@
-#!/home/josue/Documents/labs/trydjango110/.venv/bin/python3
+#!/home/josue/Documentos/labs/urlshortener/.venv/bin/python3
 
 # -*- coding: utf-8 -*-
 import re

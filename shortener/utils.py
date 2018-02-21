@@ -1,10 +1,12 @@
 import random
 import string
+from django.conf import settings
 # from shortener.models import KirrURL
 
+SHORTCODE_MIN = getattr(settings, "SHORTCODE_MIN", 6)
 
 # gerador de shortcode
-def code_generator(size=6, chars=string.ascii_lowercase + string.digits):
+def code_generator(size=SHORTCODE_MIN, chars=string.ascii_lowercase + string.digits):
     # new_code = ''
     # for _ in range(size):
     #     new_code += random.choice(chars)
@@ -13,7 +15,7 @@ def code_generator(size=6, chars=string.ascii_lowercase + string.digits):
 
 
 # instance é a instancia do modulo KirrURL
-def create_shortcode(instance, size=6):
+def create_shortcode(instance, size=SHORTCODE_MIN):
     new_code = code_generator(size=size)
     # Getting the class direct from the KirrURL model
     # print(instance)
