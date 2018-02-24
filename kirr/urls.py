@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from shortener.views import kirr_redirect_view, KirrCBView
+from shortener.views import kirr_redirect_view, KirrCBView, test_view
 
 # DO NOT DO
 # from shortener import views
@@ -24,8 +24,9 @@ from shortener.views import kirr_redirect_view, KirrCBView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^a/(?P<shortcode>[\w-]+){6,15}$', kirr_redirect_view),
-    url(r'^b/(?P<shortcode>[\w-]+){6,15}$', KirrCBView.as_view()), # joincfe.com/projects/  Python regex
+    url(r'^about123/$', test_view),
+    url(r'^(?P<shortcode>[\w-]+){6,15}/$', kirr_redirect_view),
+    url(r'^b/(?P<shortcode>[\w-]+){6,15}/$', KirrCBView.as_view()), # joincfe.com/projects/  Python regex
 
 
     # DO NOT DO

@@ -5,6 +5,10 @@ from .models import KirrURL
 # from . import View
 
 
+def test_view(request):
+    return HttpResponse('some stuff')
+
+
 def kirr_redirect_view(request, shortcode=None, *args, **kwargs): # function based view
     # print(request.user.is_authenticated())
     # print(shortcode)
