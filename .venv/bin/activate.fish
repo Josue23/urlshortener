@@ -36,7 +36,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/josue/Documentos/labs/urlshortener/.venv"
+set -gx VIRTUAL_ENV "/home/josue/Documents/labs/urlshortener/.venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

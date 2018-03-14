@@ -1,4 +1,4 @@
-#!/home/josue/Documentos/labs/urlshortener/.venv/bin/python
+#!/home/josue/Documents/labs/urlshortener/.venv/bin/python
 
 import sys
 import getopt
